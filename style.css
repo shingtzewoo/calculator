@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: '. calculator .';
+    justify-self: center;
+    align-self: center;
+}
+
+#calculator {
+    display: grid;
+    grid-area: calculator;
+    grid-column: 2 / span 1;
+    position: relative;
+    height: 800px;
+    width: 300px;
+    /* grid-template-rows: 'screen button1 button2 button3 button4 button5'; */ 
+}
